@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.iconeaside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transition: transform 330ms ease-in-out;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0%;
+    transition: width 330ms;
+    overflow: hidden;
+    opacity: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+}
+
+header {
+    height: 10%;
+    border-bottom: 2px solid steelblue;
+    background-color: #ABA9C3
+    ;
+}
+
+table {
+    height: 90%;
+}
+
+th {
+    padding: 2vh;
+    width: 12.5%;
+}
+
+tr {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+td {
+    
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    border : 1px solid black;  
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.texte {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+td.pause {
+    background-color: grey;
+}
+
+td.creneau-pause {
+    font-weight: 700;
+}
+
+tbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#asidebtn[type="checkbox"]:checked ~ aside {
+    width: 30%;
+    opacity: 100;
+  }
+
+#asidebtn[type="checkbox"]:checked ~ label {
+    transform: rotate(180deg);
+  }
+
+header {
+    text-align: center;
+}
+
+.formbox {
+    width: 40%;
+    height: 20px;
+}
+
+
+form {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 28%;
+
+}
+
+h3 {
+    margin-top: 40px;
+    text-align: center;
+}
+ 
+.sport {
+    background-color: chartreuse;
+}
+
+.sieste {
+    background-color:pink;
+}
+
